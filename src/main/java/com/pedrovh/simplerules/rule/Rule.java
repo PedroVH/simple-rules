@@ -4,11 +4,11 @@ import java.util.*;
 
 public class Rule {
 
-    private int priority = 1;
-    private String name = "NAME";
-    private String description = "DESCRIPTION";
-    private List<Condition> conditions = new ArrayList<>();
-    private List<Action> actions = new ArrayList<>();
+    private final int priority;
+    private final String name;
+    private final String description;
+    private final List<Condition> conditions;
+    private final List<Action> actions;
 
     protected Rule(int priority, String name, String description, List<Condition> conditions, List<Action> actions) {
         this.priority = priority;
